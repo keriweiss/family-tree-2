@@ -30,22 +30,6 @@ class FamilyTree {
 
 module.exports = FamilyTree;
 
-/*{
-  function members(obj, level) {
-    let string = `${level} ${obj.value}\n`;
-    if (obj.children.length === 0) {
-      return string;
-    } else {
-      level += '--';
-      obj.children.forEach((child) => {
-        string += `${members(child, level)}`;
-      });
-      return string;
-    }
-  }
-  return members(this, '--');
-}*/
-
 const randomList = (arr, count) => {
   let randomArray = [];
   if (count === 0) {
