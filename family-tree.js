@@ -29,15 +29,3 @@ class FamilyTree {
 }
 
 module.exports = FamilyTree;
-
-const randomList = (arr, count) => {
-  let randomArray = [];
-  if (count === 0) {
-    return randomArray;
-  } else {
-    let randomIndex = Math.floor(Math.random() * (arr.length - 1));
-    randomArray.push(arr[randomIndex]);
-    arr.splice(randomIndex, 1);
-    return randomArray.concat(randomList(arr, count - 1));
-  }
-};
